@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(202, 202, 202);
+}
+
+.navCont {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(0, 89, 214);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerCont {
+  width: 100vw;
+  display: flex;
+  background-color: rgb(0, 89, 214);
+}
+.footerCont .contactSection {
+  font-size: 1.25rem;
+}
+.footerCont .contactSection .contactTitle {
+  font-weight: bold;
+}
+
+.switchCont {
+  z-index: 2;
+  margin-right: 4rem;
+}
+.switchCont .switchBtn {
+  color: black;
+  background-color: rgb(202, 202, 202);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.4rem;
+}/*# sourceMappingURL=main.css.map */
