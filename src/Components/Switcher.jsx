@@ -9,11 +9,21 @@ const Switcher = () => {
     function toggleTheme(){
         setTheme(theme === 'light' ? 'dark' : 'light');
     }
+    
     return (
-        <div className='switchCont'>
-            {/* toggles the toggleTheme function after click */}
-            <button onClick={toggleTheme} className='switchBtn'>Switch</button>
-        </div>
+        <>
+            {/* determines whether or not to load the light or dark mode */}
+            {theme==='light' ?
+                <div className='switchCont'>
+                    {/* toggles the toggleTheme function after click */}
+                    <button onClick={toggleTheme} className='switchBtn'>Switch</button>
+                </div> :
+                <div className='switchCont darkSwitch'>
+                    {/* toggles the toggleTheme function after click */}
+                    <button onClick={toggleTheme} className='switchBtn darkSwitchBtn'>Switch</button>
+                </div>
+            }
+        </>
     )
 }
 

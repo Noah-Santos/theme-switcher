@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  transition: background-color 0.5s ease;
-  transition: color 0.5s ease;
 }
 * ::-webkit-scrollbar {
   display: none;
@@ -34,6 +32,18 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.5s;
+}
+.navCont h1 {
+  color: rgb(17, 17, 17);
+  margin-left: 1.5rem;
+}
+
+.darkNav {
+  background-color: rgb(17, 17, 17);
+}
+.darkNav .darkTitle {
+  color: rgb(202, 202, 202);
 }
 
 .footerCont {
@@ -53,9 +63,16 @@ body {
   margin-right: 4rem;
 }
 .switchCont .switchBtn {
-  color: black;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(27, 27, 27);
+  color: rgb(202, 202, 202);
   border: none;
   border-radius: 0.25rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+.switchCont .darkSwitchBtn {
+  color: rgb(17, 17, 17);
+  background-color: rgb(202, 202, 202);
 }/*# sourceMappingURL=main.css.map */

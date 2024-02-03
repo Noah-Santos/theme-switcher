@@ -9,4 +9,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.5s;
+
+    h1{
+        color: rgb(17, 17, 17);
+        margin-left: 1.5rem;
+    }
+}
+
+.darkNav{
+    background-color: rgb(17, 17, 17);
+
+    .darkTitle{
+        color: rgb(202, 202, 202);
+    }
 }
