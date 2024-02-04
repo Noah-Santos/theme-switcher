@@ -3,12 +3,23 @@
     display: flex;
     // background-color: rgb(27, 27, 27);
     background-color: rgb(0, 89, 214);
+    transition: background-color 0.5s;
 
     .contactSection{
         font-size: 1.25rem;
+        color: rgb(17, 17, 17);
 
         .contactTitle{
             font-weight: bold;
         }
+    }
+}
+
+.darkFooter{
+    background-color: rgb(17, 17, 17);
+
+    .darkContact{
+        transition: color 0.5s;
+        color: rgb(202, 202, 202);
     }
 }

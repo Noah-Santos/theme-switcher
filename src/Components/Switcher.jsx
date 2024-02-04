@@ -13,16 +13,10 @@ const Switcher = () => {
     return (
         <>
             {/* determines whether or not to load the light or dark mode */}
-            {theme==='light' ?
-                <div className='switchCont'>
-                    {/* toggles the toggleTheme function after click */}
-                    <button onClick={toggleTheme} className='switchBtn'>Switch</button>
-                </div> :
-                <div className='switchCont darkSwitch'>
-                    {/* toggles the toggleTheme function after click */}
-                    <button onClick={toggleTheme} className='switchBtn darkSwitchBtn'>Switch</button>
-                </div>
-            }
+            <div className={theme==='light' ? 'switchCont' : 'switchCont darkSwitch'}>
+                {/* toggles the toggleTheme function after click */}
+                <button onClick={toggleTheme} className={theme==='light' ? 'switchBtn' : 'switchBtn darkSwitchBtn'}>Switch</button>
+            </div>
         </>
     )
 }

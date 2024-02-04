@@ -25,3 +25,12 @@ body{
     // background-color: rgb(32, 32, 32);
     background-color: rgb(202, 202, 202);
 }
+
+.content{
+    background-color: rgb(202, 202, 202);
+    transition: background-color 0.5s;
+}
+
+.darkContent{
+    background-color: rgb(52, 52, 52);
+}

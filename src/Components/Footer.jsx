@@ -5,12 +5,15 @@ const Footer = () => {
     let {theme} = useContext(StyleContext);
 
     return (
-        <div className='footerCont'>
-            <div className="contact">
-                <p className="contactSection"><span className="contactTitle">Email: </span> nsanto591@west-mec.org</p>
-                <p className="contactSection"><span className="contactTitle">GitHub: </span>Noah-Santos</p>
+        <>
+            {/* determines whether or not to load the light or dark mode */}
+            <div className={theme==='light' ? 'footerCont' : 'footerCont darkFooter'}>
+                <div className="contact">
+                    <p className={theme==='light' ? 'contactSection' : 'contactSection darkContact'}><span className="contactTitle">Email: </span> nsanto591@west-mec.org</p>
+                    <p className={theme==='light' ? 'contactSection' : 'contactSection darkContact'}><span className="contactTitle">GitHub: </span>Noah-Santos</p>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

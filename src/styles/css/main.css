@@ -22,6 +22,15 @@ body {
   background-color: rgb(202, 202, 202);
 }
 
+.content {
+  background-color: rgb(202, 202, 202);
+  transition: background-color 0.5s;
+}
+
+.darkContent {
+  background-color: rgb(52, 52, 52);
+}
+
 .navCont {
   position: fixed;
   top: 0;
@@ -50,12 +59,22 @@ body {
   width: 100vw;
   display: flex;
   background-color: rgb(0, 89, 214);
+  transition: background-color 0.5s;
 }
 .footerCont .contactSection {
   font-size: 1.25rem;
+  color: rgb(17, 17, 17);
 }
 .footerCont .contactSection .contactTitle {
   font-weight: bold;
+}
+
+.darkFooter {
+  background-color: rgb(17, 17, 17);
+}
+.darkFooter .darkContact {
+  transition: color 0.5s;
+  color: rgb(202, 202, 202);
 }
 
 .switchCont {
@@ -63,7 +82,7 @@ body {
   margin-right: 4rem;
 }
 .switchCont .switchBtn {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(17, 17, 17);
   color: rgb(202, 202, 202);
   border: none;
   border-radius: 0.25rem;

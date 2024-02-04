@@ -7,17 +7,11 @@ const Nav = () => {
 
   return (
     <>
-    {/* determines whether or not to load the light or dark mode */}
-      {theme==='light' ?
-        <div className='navCont'>
-          <h1>Title</h1>
-          <Switcher></Switcher>
-        </div> :
-        <div className='navCont darkNav'>
-          <h1 className='darkTitle'>Title</h1>
+      {/* determines whether or not to load the light or dark mode */}
+      <div className={theme==='light' ? 'navCont' : 'navCont darkNav'}>
+          <h1 className={theme==='light' ? '' : 'darkTitle'}>Title</h1>
           <Switcher></Switcher>
         </div>
-      }
     </>
   )
 }
