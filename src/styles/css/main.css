@@ -22,12 +22,15 @@ body {
   background-color: rgb(202, 202, 202);
 }
 
-.content {
+.contentHome {
   background-color: rgb(202, 202, 202);
   transition: background-color 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.darkContent {
+.darkContentHome {
   background-color: rgb(52, 52, 52);
 }
 
@@ -95,4 +98,54 @@ body {
 .switchCont .darkSwitchBtn {
   color: rgb(17, 17, 17);
   background-color: rgb(202, 202, 202);
+}
+
+.contentSection {
+  margin-bottom: 2vh;
+  margin-top: 10vh;
+  width: 80vw;
+  border-radius: 1rem;
+  transition: background-color 0.5s;
+  background-color: rgb(0, 89, 214);
+}
+.contentSection .vehicleSection {
+  padding: 2rem;
+  margin: 1rem;
+  background-color: rgb(202, 202, 202);
+  border-radius: 0.5rem;
+  transition: background-color 0.5s;
+}
+.contentSection .vehicleSection .vehicleTitle {
+  transition: color 0.5s;
+  color: rgb(17, 17, 17);
+  font-size: 1.75rem;
+}
+.contentSection .vehicleSection .vehicleTitle .vehicleName {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.contentSection .vehicleSection .vehicleDesc {
+  transition: color 0.5s;
+  color: rgb(17, 17, 17);
+  font-size: 1.25rem;
+}
+.contentSection .vehicleSection .vehicleDesc .vehicleDescription {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.contentSection .vehicleSection .vehicleImg {
+  border-radius: 0.5rem;
+}
+
+.darkContent {
+  background-color: rgb(17, 17, 17);
+}
+.darkContent .darkVehicle {
+  background-color: rgb(52, 52, 52);
+}
+.darkContent .darkVehicle .darkVehicleTitle {
+  color: rgb(202, 202, 202);
+}
+.darkContent .darkVehicle .darkVehicleDesc {
+  color: rgb(202, 202, 202);
 }/*# sourceMappingURL=main.css.map */
