@@ -64,6 +64,7 @@ body {
 .footerCont .contactSection {
   font-size: 1.25rem;
   color: rgb(17, 17, 17);
+  padding: 0.5rem;
 }
 .footerCont .contactSection .contactTitle {
   font-weight: bold;
