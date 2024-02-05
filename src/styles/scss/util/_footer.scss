@@ -1,13 +1,17 @@
 .footerCont{
     width: 100vw;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: rgb(0, 89, 214);
     transition: background-color 0.5s;
+    height: 7rem;
 
     .contactSection{
         font-size: 1.25rem;
         color: rgb(17, 17, 17);
         padding: 0.5rem;
+        margin-left: 1rem;
 
         .contactTitle{
             font-weight: bold;
